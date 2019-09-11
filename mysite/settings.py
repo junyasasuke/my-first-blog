@@ -81,6 +81,18 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'g1_db',
+#         'USER': 'g1',
+#         'PASSWORD': 'nscnl001',
+#         'HOST': 'nsc-jp.net',
+#         'PORT': '3306',
+#     }
+# }
+#manege.pyで設定変更
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -119,4 +131,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/'
+
+
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
